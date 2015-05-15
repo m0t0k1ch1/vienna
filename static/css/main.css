@@ -6,14 +6,13 @@ main {
 /* Header */
 
 .global-header {
-    background-image: url(/images/bg.jpg);
     background-size: cover;
 }
 
 .header-text {
     position: relative;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.9);
     color: rgba(255, 255, 255, 0.9);
     padding-bottom: 1px;
 }
