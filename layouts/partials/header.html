@@ -6,7 +6,7 @@
   <meta property="og:title" content="{{ if ne .URL "/" }} {{ .Title }} &middot; {{ end }} {{ .Site.Title }}" />
   {{ with .Site.Params.themecolor }}
   <meta name="theme-color" content="{{ . }}" />
- {{ end }}
+  {{ end }}
   <meta property="og:site_name" content="{{ .Site.Title }}" />
   <meta property="og:url" content="{{ .Permalink }}" />
   <meta property="og:image" content="{{ .Site.BaseURL }}my-images/common/eye_with_bg.png" />
@@ -25,6 +25,13 @@
   {{ else }}
   <meta property="og:type" content="website" />
   {{ end }}
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="{{ .Site.Title }}" />
+  {{ if ne .URL "/" }}
+  <meta name="twitter:title" content="{{ .Title }}" />a"
+  {{ end }}
+  <meta name="twitter:image" content="{{ .Site.BaseURL }}my-images/common/eye_with_bg.png" />
 
   <title>
     {{ if ne .URL "/" }} {{ .Title }} &middot; {{ end }} {{ .Site.Title }}
