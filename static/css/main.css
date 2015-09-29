@@ -277,8 +277,8 @@ blockquote {
      font-style:italic;
 }
 
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-    font-family: "Source Sans Pro", "Kozuka Gothic Pr6N", Meiryo, sans-serif !important;
+body {
+    font-family: mplus-1p-light, sans-serif !important;
 }
 
 article section img {
