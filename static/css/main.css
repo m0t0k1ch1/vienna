@@ -259,6 +259,11 @@ a.btn-back {
 
 /* Override some of Bootstrap's styles */
 
+@font-face {
+    font-family: mplus-1p-light;
+    src: url('http://mplus-fonts.sourceforge.jp/webfonts/mplus-1p-light.ttf') format("truetype");
+}
+
 pre {
     font-size: 14px;
 }
