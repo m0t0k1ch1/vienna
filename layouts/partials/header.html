@@ -12,13 +12,13 @@
   <meta property="og:site_name" content="{{ .Site.Title }}" />
   <meta property="og:title" content="{{ if ne .URL "/" }} {{ .Title }} &middot; {{ end }} {{ .Site.Title }}" />
   <meta property="og:description" content="{{ .Site.Params.subtitle }}" />
-  <meta property="og:image" content="{{ .Site.BaseURL }}my-images/common/eye_with_bg.png" />
+  <meta property="og:image" content="{{ .Site.BaseURL }}my-images/common/eye.jpg" />
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="{{ .Site.Title }}" />
   <meta name="twitter:title" content="{{ if ne .URL "/" }} {{ .Title }} &middot; {{ end }} {{ .Site.Title }}" />
   <meta name="twitter:description" content="{{ .Site.Params.subtitle }}" />
-  <meta name="twitter:image" content="{{ .Site.BaseURL }}my-images/common/eye_with_bg.png" />
+  <meta name="twitter:image" content="{{ .Site.BaseURL }}my-images/common/eye.jpg" />
 
   <title>
     {{ if ne .URL "/" }} {{ .Title }} &middot; {{ end }} {{ .Site.Title }}
@@ -31,7 +31,7 @@
   <link rel="stylesheet" href="{{ .Site.BaseURL }}my-css/main.css" />
   <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400" type="text/css">
   <link rel="shortcut icon" href="{{ .Site.BaseURL }}my-images/favicon.ico" />
-  <link rel="apple-touch-icon" href="{{ .Site.BaseURL }}my-images/common/eye_with_bg.png" />
+  <link rel="apple-touch-icon" href="{{ .Site.BaseURL }}my-images/common/eye.jpg" />
   {{ if eq .URL "/" }}
   <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
   {{ end }}
