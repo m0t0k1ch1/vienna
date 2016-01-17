@@ -7,6 +7,9 @@
   <meta name="theme-color" content="{{ . }}" />
   {{ end }}
 
+  {{ with .Site.Params.fb_app_id }}
+  <meta property="fb:app_id" content="{{ . }}" />
+  {{ end }}
   <meta property="og:type" content="{{ if .IsPage }} article {{ else }} website {{ end }}" />
   <meta property="og:url" content="{{ .Permalink }}" />
   <meta property="og:site_name" content="{{ .Site.Title }}" />
@@ -37,13 +40,22 @@
   {{ end }}
 </head>
 <body>
-  <div id="fb-root"></div>
   <script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        appId:   '171566516539742',
+        xfbml:   true,
+        version: 'v2.5'
+      });
+    };
     (function(d, s, id) {
       var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.5";
+      if (d.getElementById(id)) {
+        return;
+      }
+      js = d.createElement(s);
+      js.id = id;
+      js.src = "//connect.facebook.net/ja_JP/sdk.js";
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
   </script>
