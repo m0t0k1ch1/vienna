@@ -1,4 +1,5 @@
 {{ partial "header.html" . }}
+{{ partial "ad-top.html" . }}
 <div class="article-list">
   {{ range $index, $page := .Paginator.Pages }}
   {{ if ne $index 0 }}
@@ -7,6 +8,6 @@
   {{ .Render "li" }}
   {{ end }}
 </div>
+{{ partial "ad-bottom.html" . }}
 {{ partial "pagination.html" .Paginator }}
 {{ partial "footer.html" . }}
-
