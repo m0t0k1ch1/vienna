@@ -1,4 +1,5 @@
 {{ partial "header.html" . }}
+{{ partial "ad-top.html" . }}
 {{ $baseurl := .Site.BaseURL }}
 <article>
   <header>
@@ -80,5 +81,5 @@
     </ul>
   </footer>
 </article>
-
+{{ partial "ad-bottom.html" . }}
 {{ partial "footer.html" . }}

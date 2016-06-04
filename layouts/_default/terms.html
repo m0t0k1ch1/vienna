@@ -1,4 +1,5 @@
 {{ partial "header.html" . }}
+{{ partial "ad-top.html" . }}
 {{ $baseurl := .Site.BaseURL}}
 <section class="taxonomy-terms">
   <h1>{{ .Title }}</h1>
@@ -9,5 +10,5 @@
     {{ end }}
   </ul>
 </section>
+{{ partial "ad-bottom.html" . }}
 {{ partial "footer.html" . }}
-

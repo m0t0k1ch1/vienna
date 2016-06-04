@@ -1,4 +1,5 @@
 {{ partial "header.html" . }}
+{{ partial "ad-top.html" . }}
 <section class="article-list">
   <h1>{{ .Title }}</h1>
   {{ range .Data.Pages }}
@@ -6,5 +7,5 @@
   {{ .Render "li" }}
   {{ end }}
 </section>
+{{ partial "ad-bottom.html" . }}
 {{ partial "footer.html" . }}
-
